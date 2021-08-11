@@ -1,9 +1,39 @@
 #CLASE METODOS, FUNCIONES Y RECURSIVIDAD
 
+#Sintaxis
+#Metodo 
+# def nombredelmetodo():
+#bloque de codigo 
+#llamar al metodo
+
+#Funcion 
+# def nombrelafuncion():
+#bloque de codigo
+#retorno
+#llamar a la fucion y guardar valor de retorno
+
+'''
+#Metodo 
+def sumar():
+  resultado = 0
+  resultado = numero1 + numero2
+  print("El resultado es", resultado)
+
+#Funcion
+def sumar2():
+  resultado = 0
+  resultado =  numero1 + numero2
+
+  return resultado
+
+respuesta = sumar2()
+ '''
+
+
 #Defincion de la Funcion 
 def my_function():
-    print("Hello from a function")
-    print("Bye From Function")
+  print("Hello from a function")
+  print("Bye From Function")
 
 #llamar Funcion
 my_function()
@@ -66,6 +96,7 @@ my_function("India")
 my_function()
 my_function("Brazil")
 
+
 #Pasar una lista como argumento
 def my_function(food):
   for x in food:
@@ -76,17 +107,14 @@ fruits = ["apple", "banana", "cherry"]
 my_function(fruits)
 
 #Valores devueltos
-def my_function(x):
-  return 5 * x
+def Convertir_Dolares_Quetzales(x):
+  return x * 7.7 
 
-Myvariable = my_function(10)
+Myvariable = Convertir_Dolares_Quetzales(10)
 
-'''
-print(my_function(3))
-print(my_function(5))
-print(my_function(9))
-'''
-print("El resultado de la llamada a funcion es: ", Myvariable)
+print("La conversion en Q es: ", Myvariable)
+
+
 
 #Recursividad sin retorno
 def cuenta_regresiva(numero):
@@ -98,7 +126,7 @@ def cuenta_regresiva(numero):
     print("Boooooooom!")      
   print ("Fin de la función", numero)
 
-cuenta_regresiva(20)
+cuenta_regresiva(100)
 
 #Recursividad con retorno
 def factorial(numero):
@@ -108,4 +136,6 @@ def factorial(numero):
     print ("valor final ->",numero)
     return numero
 
-factorial(5)
+myvariable = factorial(5)
+print ("El factorial es: ", myvariable)
+

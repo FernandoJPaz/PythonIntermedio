@@ -13,6 +13,7 @@ import json
 #LECTURA
 # \\ Windows
 # / Linux
+# / Mac OS
 
 ruta = 'C:\\Users\\fher_\\Desktop\\HT2\\Entrada.txt'
 #'C:\\Archivo.txt'
@@ -24,8 +25,11 @@ print(archivo.readline())
 print(archivo.readline())
 print(archivo.readline())
 
-print(archivo.readlines())
+print("------- ------")
 
+#print(archivo.readlines())
+
+print("-------")
 
 for x in archivo:
     print(x)
@@ -35,22 +39,26 @@ print("Fin Lectura")
 
 
 #ESCRITURA
-'''
-contenido = "***** Fernando Jose Paz Gonzalez *****"
-nueva_ruta = "C://Users//fher_//Desktop//PyhtonSaeSap//Intermedio//ProyectosPython//pythonintermedio//ArchivoTest.txt"
+
+contenido = "***** Fernando Jose Paz Gonzalez ***** \n"
+nueva_ruta = "C://Users//fher_//Desktop//pythonintermedio//ArchivoTest.txt"
 
 archivo = open(nueva_ruta, 'w')
 archivo.write(contenido)
+archivo.write(contenido)
+archivo.write(contenido)
+print("Escritura de arhivo Exitosa")
 archivo.close
-'''
 
-archivo = open("C://Users//fher_//Desktop//PyhtonSaeSap//Intermedio//ProyectosPython//pythonintermedio//ArchivoTest.txt","r")
+
+
+archivo = open(nueva_ruta,"r")
 #readline
-'''
+
 for linea in archivo.readlines():
     print(linea)
 archivo.close()
-'''
+
 
 #METODOS
 def get_File(ruta, permiso):
@@ -68,7 +76,7 @@ def Write_File(archivo, texto):
 
 arc = get_File("C:\\Users\\fher_\\Desktop\\Archivo.txt","r+")
 print(read_File(arc))
-Write_File(arc,"--- Fernando Jose Paz Gonzalez ---")
+Write_File(arc,"--- Fernando Jose Paz Gonzalez 05/19/2021 ---")
 print(read_File(arc))
 
 
